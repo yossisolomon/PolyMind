@@ -12,7 +12,11 @@ def save_answer(answer):
 
 
 def get_random_question():
-    return "Are you a female?"
+    import random
+    l = ["Are you a female?", "Are you ZORO?",
+         "Do you live in Haifa?", "Is your name Tal?",
+         "Do you breath?", "Are you a homosapien?"]
+    return random.choice(l)
 
 if __name__ == '__main__':
     app.run(port=12345, debug=True)
