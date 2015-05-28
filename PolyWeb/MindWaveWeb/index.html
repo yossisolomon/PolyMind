@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="pollyMind">
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+		<script type="text/javascript" src="pollyMind.js"></script>
+		<title>MahaNet2015</title>
+	</head>
+	<body>
+		<div align="center" id="connectDiv">
+		<button type="button" class="btn btn-default" ng-model="connectedModel">{{connect}}</button>
+		</div>
+		</br>
+		<div ng-controller="questionController" align="center">
+		{{questionText}}
+		</div>
+	</body>
+</html>
